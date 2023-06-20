@@ -1,0 +1,122 @@
+body {
+  overflow-x: hidden;
+}
+/* 게시판 글쓰기(event_form.php) */
+#event_box {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+  }
+  #event_box h3 {
+    margin-top: 30px;
+    padding: 10px;
+    border-bottom: solid 2px #516e7f;
+    font-size: 20px;
+  }
+  #event_form span {
+    display: inline-block;
+  }
+  #event_form .col1 {
+    width: 150px;
+  }
+  #event_form li {
+    padding: 12px;
+    border-bottom: solid 1px #dddddd;
+  }
+  #event_form input {
+    width: 500px;
+    height: 25px;
+  }
+  #event_form textarea {
+    width: 500px;
+    height: 150px;
+  }
+  #event_form #text_area {
+    position: relative;
+    height: 158px;
+  }
+  #event_form #text_area .col1 {
+    position: absolute;
+    top: 10px;
+  }
+  #event_form #text_area .col2 {
+    position: absolute;
+    left: 166px;
+  }
+  #event_box .buttons {
+    text-align: right;
+    margin: 20px 0 40px 0;
+  }
+  #event_box .buttons li {
+    display: inline;
+  }
+  #event_box .buttons button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  /* 게시판 목록보기(event_list.php) */
+  #event_list {
+    padding: 0;
+  }
+  #event_list li {
+    padding: 10px 0;
+    border-bottom: solid 1px #dddddd;
+  }
+  #event_list span {
+    display: inline-block;
+    text-align: center;
+  }
+  #event_list .col1 {
+    width: 80px;
+  }
+  #event_list .col2 {
+    width: 330px;
+    text-align: left;
+  }
+  #event_list .col3 {
+    width: 100px;
+  }
+  #event_list .col4 {
+    width: 40px;
+  }
+  #event_list .col5 {
+    width: 180px;
+  }
+  #event_list .col6 {
+    width: 40px;
+  }
+  #page_num {
+    text-align: center;
+    margin: 30px 0;
+  }
+  #page_num li {
+    display: inline;
+  }
+  /* 게시판 내용보기(event_view.php) */
+  #event_box {
+    width: 800px;
+    margin: 0 auto;
+  }
+  #event_box .title {
+    margin-top: 30px;
+    padding: 10px;
+    border-bottom: solid 2px #516e7f;
+    font-size: 20px;
+  }
+  #view_content li:nth-child(1) {
+    padding: 15px;
+    border-bottom: solid 1px #aaaaaa;
+  }
+  #view_content .col2 {
+    float: right;
+  }
+  #view_content li:nth-child(2) {
+    padding: 15px 15px 80px 15px;
+    border-bottom: solid 1px #cccccc;
+  }
+  #view_content li:nth-child(3) button {
+    padding: 5px 20px;
+    margin: 15px 0 40px 720px;
+    cursor: pointer;
+  }
+  

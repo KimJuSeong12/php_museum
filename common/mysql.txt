@@ -1,0 +1,57 @@
+create table employee(
+	num int,
+    id char(20),
+    name char(10),
+    gender char(1),
+    age int,
+    department char(20),
+    hp char(20),
+    address char(100),
+    primary key(num)
+);
+desc employee;
+desc members;
+alter table employee add email char(30);
+alter table members rename employee;
+alter table members drop age;
+drop table employee;
+
+
+use memberdb;
+
+create table members(
+	num int not null auto_increment,
+    id char(15) not null,
+    pass char(15) not null,
+    name char(10) not null,
+    email char(80),
+    regist_day char(20),
+    level int default 0,
+    point int default 0,
+    primary key(num)
+);
+desc members;
+insert into members values(null, 'admin', 'admin', '관리자', 'admin@naver.com', '2023-06-01 10:20:30', 1, 0);
+select * from members;
+update members set pass='3333', name='홍홍홍', email='aaa@google.com' where num = 4;
+delete from members where num = 3;
+
+create table message(
+	num int not null auto_increment,
+    send_id char(20) not null,
+    rv_id char(20) not null,
+    subject char(200) not null,
+    content text not null,
+    regist_day char(20),
+    primary key(num)
+);
+show tables;
+desc message;
+select * from message;
+
+insert into message(sended_id, rv_id, subject, content, regist_day) values ('admin','1111','음식','맛집소개','20230602 (14:37:20)');
+alter table message change sended_id send_id char(20);
+
+select count(*) as count from message;
+
+insert into members values(null, 'aaaa', 'aaaa', 'aaaa', 'aaaa@naver.com', '2023-06-01 10:20:30', 9, 0);

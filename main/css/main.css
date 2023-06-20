@@ -1,0 +1,72 @@
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: rgba(245, 236, 217, 0.689);
+  --main-text: rgb(70, 61, 40);
+  --contact-text-color: rgb(101, 90, 66);
+  --footer-text: #bdbdbd;
+  --line-grey: rgba(211, 211, 211, 0.841);
+}
+/* 메인 콘텐트 */
+#main_content {
+  margin: 3rem auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+}
+#announce {
+  margin-right: 30px;
+  width: 500px;
+}
+#announce #ad {
+  flex: 1;
+  margin: 0 2rem 0 0;
+}
+#month span {
+  display: block;
+}
+h4 {
+  color: var(--main-text);
+  font-size: 1.2rem;
+  border-bottom: 0.15rem solid lightgrey;
+}
+#announce li {
+  display: flex;
+  justify-content: space-between;
+  color: var(--contact-text-color);
+  margin: 0.6rem 0 0.1rem;
+  padding: 0.6rem;
+  border-bottom: 0.06rem solid var(--line-grey);
+}
+#exibition {
+  width: 190px;
+  margin: 0 2rem 0 0;
+}
+image {
+  object-fit: contain;
+}
+#main_slide {
+  display: flex;
+  justify-content: left;
+  padding-left: 420px;
+  margin-top: 10px;
+}
+#rorem {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+}
+#rorem li {
+  text-align: center;
+}
+.separator {
+  width: 57%;
+  border-top: 1px solid #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
